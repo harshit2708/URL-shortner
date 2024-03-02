@@ -36,7 +36,7 @@ const getShortURL = async (req, res) => {
         )
         const new_id = generateSnowFlakeid(SequenceDoc)
         id = base62.encode(new_id)
-        const shorturl = `${process.env.BASE}/ap1/${id}`
+        const shorturl = `${process.env.BASE}/api/${id}`
         
         const newUrl = await Url.create({url:originalUrl, id , shorturl})
         res.status(StatusCodes.OK).json(newUrl)
