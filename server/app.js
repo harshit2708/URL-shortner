@@ -11,9 +11,9 @@ app.use(express.json())
 app.use(bodyParser.json())
 app.use(cors())
 
-app.use('/api/v1/url', urlRouter)
-app.use('/', urlRouter)
-const port = process.env.PORT || 3000
+app.use('/api', urlRouter)
+
+const port = process.env.PORT || 3001
 
 const start = async () => {
     try {

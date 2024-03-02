@@ -16,7 +16,7 @@ function App() {
 
     // For demonstration purposes, let's assume a hypothetical API endpoint
     try {
-      const response = await fetch('http://localhost:3000/api/v1/url/link', {
+      const response = await fetch('http://3.13.210.236/api', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
