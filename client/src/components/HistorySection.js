@@ -7,7 +7,7 @@ const HistorySection = ({ shortenedUrlsHistory }) => {
       <ul>
         {shortenedUrlsHistory.map((item, index) => (
           <li key={index}>
-            <span>{item.originalUrl}</span>
+            <span>{item.url}</span>
             <span> ➜ </span>
             <a href={item.shortenedUrl} target="_blank" rel="noopener noreferrer">
               {item.shorturl}
